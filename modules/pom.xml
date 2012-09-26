@@ -13,5 +13,10 @@
 
     <groupId>org.titanium</groupId>
     <artifactId>titanium-modules</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>titan</module>
+    </modules>
 
 </project>
