@@ -20,3 +20,8 @@ INTRODUCTION
 ============
 
 Android Mobile App with Maven Integration
+
+DEVELOPER
+=========
+
+AZEEM MUMTAZ
