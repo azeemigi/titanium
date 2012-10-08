@@ -25,3 +25,10 @@ DEVELOPER
 =========
 
 SLHub Team
+
+
+PENDING FUNCTIONALITY
+=====================
+
+   1) uStream integration
+   2) Download or listen mp3 functionality
