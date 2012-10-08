@@ -9,11 +9,11 @@
         <relativePath>../../parent/pom.xml</relativePath>
     </parent>
 
-    <name>titan</name>
+    <name>app</name>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.titanium</groupId>
-    <artifactId>titanium-titan</artifactId>
+    <artifactId>titanium-app</artifactId>
 
     <packaging>jar</packaging>
 

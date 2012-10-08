@@ -16,7 +16,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>titan</module>
+        <module>app</module>
     </modules>
 
 </project>
