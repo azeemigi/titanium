@@ -14,9 +14,20 @@
  * under the License.
  */
 
-package org.titanium.titan;
+package org.titanium.app;
 
-public class Main {
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
+public class MainTest {
 
+    @BeforeMethod
+    public void setUp() throws Exception {
+
+    }
+
+    @AfterMethod
+    public void tearDown() throws Exception {
+
+    }
 }
