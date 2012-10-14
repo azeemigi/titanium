@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.titanium</groupId>
+    <groupId>com.slhub</groupId>
     <artifactId>titanium</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -16,7 +16,7 @@
         <target.directory>../${application.name}</target.directory>
         <android.version>2.2.1</android.version>
         <api.version>10</api.version>
-        <android.maven.plugin>3.1.1</android.maven.plugin>
+        <android.maven.plugin>3.3.0</android.maven.plugin>
     </properties>
 
     <dependencies>
@@ -32,9 +32,47 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.0.1</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
+
+    <scm>
+        <connection>scm:git:git://github.com/azeemigi/titanium.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/azeemigi/titanium.git</developerConnection>
+        <url>https://github.com/azeemigi/titanium</url>
+    </scm>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                    <artifactId>android-maven-plugin</artifactId>
+                    <version>${android.maven.plugin}</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <sdk>
+                            <platform>${api.version}</platform>
+                        </sdk>
+                        <undeployBeforeDeploy>true</undeployBeforeDeploy>
+                        <proguard>
+                            <skip>false</skip>
+                            <config>../proguard.cfg</config>
+                        </proguard>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>2.3.2</version>
+                    <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 
 
 
